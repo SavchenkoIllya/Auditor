@@ -1,0 +1,66 @@
+.header .iconify.hamburger-menu{
+    display: none;
+}
+
+
+@media screen and (max-width: 1265px){
+    .pre-contacts{
+        flex-wrap: wrap;
+    }
+    .frm-btn{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 1199px){
+
+}
+
+@media screen and (max-width: 991px){
+    .header .iconify.hamburger-menu{
+        display: block;
+    }
+    .header .right-menu .menu-list{
+        display: none;
+    }
+    .third-screen .feedbacks-wrapper{
+        flex-wrap: wrap;
+    }
+
+    .services{
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+    
+    .forth-screen .services .service{
+        /* margin: 0px 0px; */
+        margin-right: 0px;
+        margin-bottom: 50px;
+        align-self: center;
+    }
+
+    .second-screen .portfolio{
+        flex-wrap: wrap;
+    }
+
+    .forth-screen .talk-about-project{
+        margin-top: 20px;
+    }
+
+    .forth-screen .pre-contacts{
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 940px){
+
+}    
+
+@media screen and (max-width: 767px){
+    
+}
+
+@media screen and (max-width: 575px){
+    
+}

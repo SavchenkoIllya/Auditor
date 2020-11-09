@@ -1,0 +1,498 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a, p, li{
+    text-decoration: none;
+    margin: 0;
+}
+
+a:hover{
+    opacity: 80%;
+}
+
+.main {
+    position: relative;
+}
+
+/* Основные */
+
+/* Хедер начался */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 90px);
+    height: 70px;
+    background: #060B15;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 45px;
+    z-index: 2;
+}
+
+.header .logo .logo-descriptor{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header .logo .logo-text .blue{
+    font-family: 'Montserrat', sans-serif;
+    color: #0037FB;
+    font-size: 25px;
+    font-weight: 800;
+} 
+
+.header .logo .logo-text .white{
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 800;
+} 
+
+.header .right-menu{
+    display: flex;
+    align-items: center;
+}
+
+.header .right-menu .menu-list{
+    display: flex;
+    list-style: none;
+}
+
+.header .right-menu .menu-list li{
+    margin-right: 50px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+.header .right-menu .menu-list li a{
+color: white;
+}
+
+.header .number{
+    align-items: center;
+}
+
+.header .number-text{
+    font-size: 20px;
+    color: white;
+}
+
+.header .iconify{
+    color: white;
+    font-size: 20px;
+}
+
+.iconify, .hamburger-menu{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+/* Хедер закончился */
+
+/* Первый экран начался */
+
+.first-screen{
+    background-image: url(./imgs/BG1.png);
+    background-color: #060B15;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.first-screen .content-main{
+    color: white;
+    /* position: absolute; */
+    /* /* top: 50%; */
+    transform: translate(0%, 50%);
+    padding-left: 80px;
+}
+
+.first-screen .content-main .title-utp{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.first-screen .content-main .subtitle-utp{
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 100;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.first-screen .content-main .top-button{
+    background-color: #0037FB;
+    color: white;
+    border-radius: 25px;
+    border-width: 0px;
+    padding: 15px 25px;
+    filter: drop-shadow(0px 0px 10px #0037FB);
+}
+
+.first-screen .content-main .top-button .top-button-text{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.first-screen .next-btn{
+    position: relative;
+    top: 80%;
+    text-align: center;
+
+}
+
+.first-screen .next-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.first-screen .next-btn .next-btn-text{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+
+}
+
+/* Первый экран закончился */
+
+/* Второй экран */
+
+.second-screen{
+    position: relative;
+    width: 100%;
+    background-image: url(./imgs/BG2.png);
+    background-color: #060B15;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.second-screen .portfolio{
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 97px;
+}
+
+.second-screen .portfolio .portfolio-numbers{
+    font-size: 90px;
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.second-screen .portfolio .portfolio-element{
+    width: 262px;
+    height: 262px;
+    position: relative;
+    border: 3px solid #0037FB;
+    border-color: #0037FB;
+    filter: drop-shadow(0px 0px 10px #0037FB);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.second-screen .portfolio .portfolio-element .pf-el-center{
+    margin-top: -10px;
+}
+
+.second-screen .portfolio .portfolio-element .pf-el-center .portfolio-main-txt{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.second-screen .portfolio .portfolio-element .pf-el-center .portfolio-sbttl-txt{
+    font-size: 18px;
+}
+
+.second-screen .about-top{
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding:0px 15px;
+}
+
+.second-screen .about-top .about-upper-txt{
+    text-align: justify;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.second-screen .about-top .line{
+    margin: 0 auto;
+    background-color: white;
+    height: 2px;
+    margin: 20px 0px;
+    
+}
+
+.second-screen .about-top .about-lower-txt{
+    text-align: justify;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.second-screen .btn-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.second-screen .next-btn-2{
+    background-color: transparent;
+    color: white;
+    border-radius: 25px;
+    padding: 15px 25px;
+    border: 2px solid white;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-style: italic;
+    font-size: 20px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25);
+}
+
+.second-screen .next-btn-2 .next-btn-text-2 {
+    /* margin: 15px; */
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* Второй экран закончился */
+
+/* Третий экран начался */
+
+.third-screen{
+    width: 100%;
+    /* height: 70vh; */
+    position: relative;
+}
+
+.third-screen .feedbacks-wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 50px 50px;
+    color: #333;
+}
+
+.third-screen .feedbacks-wrapper .feedback-1{
+    margin: 0px 50px;
+}
+
+.third-screen .feedbacks-wrapper .fb-name{
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+.third-screen .feedbacks-wrapper .fb-text{
+    text-align: justify;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.third-screen .fb-logo{
+    text-align: center;
+}
+
+.third-screen .scroll-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* Третий экран закончился */
+
+/*Четвертый экран*/
+
+.forth-screen{
+    background-image: url(./imgs/BG4.png);
+    background-color: #060B15;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+.forth-screen .name{
+    font-size: 60px;
+    color: white;
+    padding-top: 100px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.forth-screen .services{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px;
+    margin-top: 50px;
+}
+
+.forth-screen .services .service{
+    width: 500px;
+    background-color: white;
+    text-align: center;
+    border-radius: 25px;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
+    margin-right: 50px;
+}
+
+.forth-screen .services .service:last-child{
+    margin-right: 0px;
+}
+
+.forth-screen .services .service-content{
+    padding: 50px 25px;
+}
+
+.forth-screen .services .service-content .main-stuff{
+    color: #2C2C2C;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+.forth-screen .services .service-content .text-stuff{
+    color: #2C2C2C;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.forth-screen .talk-about-project{
+    background-color: transparent;
+    color: white;
+    border-radius: 25px;
+    padding: 15px 25px;
+    border: 2px solid white;
+    margin: 0 auto;
+    margin-top: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-style: italic;
+    font-size: 20px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25);
+}
+
+.forth-screen .talk-about-project a{
+    text-decoration: none;
+    color: white;
+}
+
+.forth-screen .pre-contacts{
+    margin-top: 350px;
+    margin-left: 100px;
+    display: flex;
+    align-items: flex-end ;
+}
+
+.forth-screen .pre-contacts .high-text{
+    width: 500px;
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+}
+
+.forth-screen .pre-contacts .low-text{
+    margin-top: 25px;
+    max-width: 700px;
+    font-size: 30px;
+    color: white;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.forth-screen .pre-contacts .frm-btn{
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    text-align: center;
+}
+
+.forth-screen .pre-contacts .frm-btn .frm{
+    width: 300px;
+}
+
+.forth-screen .pre-contacts .frm-btn .frm input{
+    border: none;
+}
+
+.forth-screen .pre-contacts .frm-btn .btn{
+    background-color: #0037FB;
+    color: white;
+    border-radius: 25px;
+    border-width: 0px;
+    padding: 15px 25px;
+    filter: drop-shadow(0px 0px 10px #0037FB);
+}
+
+.forth-screen .pre-contacts .frm-btn .btn .btn-text{
+    margin: 15px;
+    }
+
+.forth-screen .contacts-wrapper{
+    padding: 100px;
+}
+
+.forth-screen .contacts{
+
+    color: white;
+    display: flex;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.forth-screen .contacts .contact-imgs{
+    display: grid;
+    margin-right: 40px;
+}
+
+.forth-screen .contacts .contact-icon{
+    padding-top: 40px;
+}
+
+.forth-screen .contacts .contact-classes{
+    font-weight: lighter;
+    margin-right: 40px;
+}
+
+.forth-screen .contacts .contact-class{
+    padding-top: 40px;
+}
+
+.forth-screen .contacts .contact-names .contact-names{
+    font-weight: bold;
+}
+
+.forth-screen .contacts .contact-names .contact-name{
+    padding-top: 40px;
+}
+
