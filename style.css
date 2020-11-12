@@ -94,11 +94,36 @@ color: white;
     margin-left: 20px;
 }
 
+.show-menu{
+    width: 100%;
+    position: absolute;
+    background-color: #060B15;
+    padding: 20px;
+    margin: 0px;
+    top: 70px;
+    left: 0;
+
+}
+
+.show-menu li{
+    padding-top: 10px;
+}
+
+.show-menu li:first-child{
+    padding-top: 0;
+}
+
+.show-menu li:last-child{
+    padding-top: 30px;
+    font-size: 14px !important;
+}
+
 /* Хедер закончился */
 
 /* Первый экран начался */
 
 .first-screen{
+    top: 70px;
     background-image: url(./imgs/BG1.png);
     background-color: #060B15;
     background-repeat: no-repeat;
@@ -109,11 +134,12 @@ color: white;
 }
 
 .first-screen .content-main{
+    max-width: 500px;
     color: white;
-    /* position: absolute; */
-    /* /* top: 50%; */
-    transform: translate(0%, 50%);
-    padding-left: 80px;
+    position: absolute; 
+    top: 50%; 
+    transform: translate(0%, -50%); 
+    padding-left: 60px;
 }
 
 .first-screen .content-main .title-utp{
@@ -147,9 +173,12 @@ color: white;
 }
 
 .first-screen .next-btn{
-    position: relative;
-    top: 80%;
+    position: absolute;
+    bottom: 10%;
+    right: 50%;
+    transform: translate(50%, 0%); 
     text-align: center;
+    padding-top: 20px;
 
 }
 
@@ -229,7 +258,7 @@ color: white;
 .second-screen .about-top{
     align-items: center;
     max-width: 600px;
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
     margin-top: 70px;
     padding:0px 15px;
@@ -387,6 +416,8 @@ color: white;
 }
 
 .forth-screen .talk-about-project{
+    text-align: center;
+    align-items: center;
     background-color: transparent;
     color: white;
     border-radius: 25px;
@@ -408,10 +439,35 @@ color: white;
 }
 
 .forth-screen .pre-contacts{
+    /* margin-top: 350px; */
+    /* margin-left: 100px; */
+    /* display: flex; */
+}
+
+.forth-screen .pre-contacts .high-text{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.forth-screen .pre-contacts .low-text{
+    margin-top: 25px;
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+
+
+
+
+.forth-screen .pre-contacts{
     margin-top: 350px;
     margin-left: 100px;
     display: flex;
     align-items: flex-end ;
+    position: relative;
 }
 
 .forth-screen .pre-contacts .high-text{
@@ -423,14 +479,14 @@ color: white;
 
 .forth-screen .pre-contacts .low-text{
     margin-top: 25px;
-    max-width: 700px;
+    width: 700px;
     font-size: 30px;
     color: white;
     font-style: italic;
     font-weight: lighter;
 }
 
-.forth-screen .pre-contacts .frm-btn{
+ .forth-screen .pre-contacts .frm-btn{
     background-color: white;
     border-radius: 30px;
     display: flex;
@@ -443,6 +499,7 @@ color: white;
 
 .forth-screen .pre-contacts .frm-btn .frm input{
     border: none;
+    background-color: transparent;
 }
 
 .forth-screen .pre-contacts .frm-btn .btn{
@@ -495,4 +552,3 @@ color: white;
 .forth-screen .contacts .contact-names .contact-name{
     padding-top: 40px;
 }
-
