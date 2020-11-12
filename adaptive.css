@@ -2,6 +2,10 @@
     display: none;
 }
 
+.header .right-menu .menu-list .hidden-number{
+    display: none;
+}
+
 
 @media screen and (max-width: 1265px){
     .pre-contacts{
@@ -23,6 +27,19 @@
     .header .right-menu .menu-list{
         display: none;
     }
+
+    .header .right-menu .number{
+        display: none;
+    }
+
+    .header .right-menu .show-menu{
+        display: block;
+    }
+    
+    .header .right-menu .menu-list .hidden-number{
+        display: block;
+    }
+
     .third-screen .feedbacks-wrapper{
         flex-wrap: wrap;
     }
@@ -33,15 +50,19 @@
 
     }
     
+    .second-screen .portfolio{
+        flex-wrap: wrap;
+    }
+
+    .third-screen .feedbacks-wrapper .feedback-1{
+        margin: 20px 0px;
+    }
+    
     .forth-screen .services .service{
         /* margin: 0px 0px; */
         margin-right: 0px;
         margin-bottom: 50px;
         align-self: center;
-    }
-
-    .second-screen .portfolio{
-        flex-wrap: wrap;
     }
 
     .forth-screen .talk-about-project{
@@ -51,6 +72,7 @@
     .forth-screen .pre-contacts{
         margin-top: 150px;
     }
+
 }
 
 @media screen and (max-width: 940px){
@@ -58,9 +80,81 @@
 }    
 
 @media screen and (max-width: 767px){
+    .first-screen .next-btn{
+        display: none;
+    }
+
+    .forth-screen .services{
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 0px;
+        margin-top: 50px;
+    }
+    .forth-screen .services .service{
+        width: 90%;
+        background-color: white;
+        text-align: center;
+        border-radius: 25px;
+        filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.5));
+        margin: 30px 0px;
+    }
+
+    .forth-screen .pre-contacts{
+
+    }
     
+    .forth-screen .pre-contacts .high-text{
+
+    }
+    
+    .forth-screen .pre-contacts .low-text{
+
+    }
+
+    
+    .forth-screen .pre-contacts .frm-btn .frm{
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 575px){
-    
+    .first-screen .content-main{
+        /* width: 100%; */
+        padding: 0 30px ;
+    }
+    .first-screen .content-main .title-utp{
+        font-size: 30px;
+    }
+    .first-screen .content-main .subtitle-utp{
+        font-size: 20px;
+        font-style: italic;
+    }
+    .second-screen .about-top{
+        /* width: 100%; */
+        align-items: center;
+        margin-top: 70px;
+        padding:0px 30px;
+    }
+
+    .forth-screen .name {
+        font-size: 40px;
+    }
+
+    .forth-screen .pre-contacts .high-text{
+
+    }
+
+    .forth-screen .pre-contacts .low-text{
+
+    }
+
+}
+
+@media screen and (max-width: 535px){
+    .second-screen .portfolio .portfolio-element{
+        margin-top: 30px;
+    }
+    .second-screen .portfolio .portfolio-element:first-child{
+        margin-top: 0;
+    }
 }
